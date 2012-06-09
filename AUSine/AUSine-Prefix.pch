@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AUSine' target in the 'AUSine' project
+//
+
+#ifdef __OBJC__
+   #import <Foundation/Foundation.h>
+#endif
