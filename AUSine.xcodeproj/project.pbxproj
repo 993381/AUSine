@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0402B715840AAA00ACD392 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0402B615840AAA00ACD392 /* AudioUnit.framework */; };
 		0D68ED9015840482002A07D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D68ED8F15840482002A07D6 /* Foundation.framework */; };
-		0D68ED9315840482002A07D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D68ED9215840482002A07D6 /* main.m */; };
-		0D68ED9715840482002A07D6 /* AUSine.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D68ED9615840482002A07D6 /* AUSine.1 */; };
+		0D68ED9315840482002A07D6 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D68ED9215840482002A07D6 /* main.mm */; };
+		0D68ED9E158404EE002A07D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D68ED9D158404EE002A07D6 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,18 +20,18 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				0D68ED9715840482002A07D6 /* AUSine.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D0402B615840AAA00ACD392 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		0D68ED8B15840482002A07D6 /* AUSine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AUSine; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D68ED8F15840482002A07D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0D68ED9215840482002A07D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0D68ED9515840482002A07D6 /* AUSine-Prefix.pch */ = {isa = PBXFileReference; path = "AUSine-Prefix.pch"; sourceTree = "<group>"; };
-		0D68ED9615840482002A07D6 /* AUSine.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AUSine.1; sourceTree = "<group>"; };
+		0D68ED9215840482002A07D6 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		0D68ED9515840482002A07D6 /* AUSine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AUSine-Prefix.pch"; sourceTree = "<group>"; };
+		0D68ED9D158404EE002A07D6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0402B715840AAA00ACD392 /* AudioUnit.framework in Frameworks */,
+				0D68ED9E158404EE002A07D6 /* AudioToolbox.framework in Frameworks */,
 				0D68ED9015840482002A07D6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +68,8 @@
 		0D68ED8E15840482002A07D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D0402B615840AAA00ACD392 /* AudioUnit.framework */,
+				0D68ED9D158404EE002A07D6 /* AudioToolbox.framework */,
 				0D68ED8F15840482002A07D6 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -73,8 +78,7 @@
 		0D68ED9115840482002A07D6 /* AUSine */ = {
 			isa = PBXGroup;
 			children = (
-				0D68ED9215840482002A07D6 /* main.m */,
-				0D68ED9615840482002A07D6 /* AUSine.1 */,
+				0D68ED9215840482002A07D6 /* main.mm */,
 				0D68ED9415840482002A07D6 /* Supporting Files */,
 			);
 			path = AUSine;
@@ -138,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D68ED9315840482002A07D6 /* main.m in Sources */,
+				0D68ED9315840482002A07D6 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +233,7 @@
 				0D68ED9C15840483002A07D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
