@@ -27,20 +27,20 @@ OSStatus CallbackProc(void *refCon,
 {
    SineUnit *sineUnit = (SineUnit*)refCon;
 	
-	float cycleLength = kSampleRate / kSineFrequency;
+   float cycleLength = kSampleRate / kSineFrequency;
    
-	for (int frame = 0; frame < numberFrames; ++frame) 
-	{
+   for (int frame = 0; frame < numberFrames; ++frame) 
+   {
       Float32 sample = (Float32)sin(2 * M_PI * (sineUnit->frame / cycleLength));
 
       // Left Channel
       ((Float32*)ioData->mBuffers[0].mData)[frame] = sample;
 		
-		// Right Channel
+      // Right Channel
       ((Float32*)ioData->mBuffers[1].mData)[frame] = sample;
 
       sineUnit->frame += 1.0;
-	}
+   }
    
    return noErr;
 }
@@ -84,7 +84,7 @@ int main(int argc, const char * argv[])
                                    0,
                                    &input, 
                                    sizeof(input));
-		CheckError(error);
+      CheckError(error);
       
       error = AudioUnitInitialize(sineUnit.audioUnit);
       CheckError(error);
