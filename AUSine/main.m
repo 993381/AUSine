@@ -1,5 +1,5 @@
 //
-//  main.mm
+//  main.m
 //  AUSine
 //
 //  Created by Tom Schroeder on 6/9/12.
