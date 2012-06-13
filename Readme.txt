@@ -1,1 +1,1 @@
-Sine wave tone using an Audio Unit.
+Sine wave tone generation using an Audio Unit.
