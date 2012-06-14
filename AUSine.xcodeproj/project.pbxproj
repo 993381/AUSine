@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		0D0402B615840AAA00ACD392 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		0D4E5ED31589B00C009E4777 /* Readme.txt */ = {isa = PBXFileReference; path = Readme.txt; sourceTree = "<group>"; };
 		0D68ED8B15840482002A07D6 /* AUSine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AUSine; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D68ED8F15840482002A07D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0D68ED9215840482002A07D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 				0D68ED9115840482002A07D6 /* AUSine */,
 				0D68ED8E15840482002A07D6 /* Frameworks */,
 				0D68ED8C15840482002A07D6 /* Products */,
+				0D4E5ED31589B00C009E4777 /* Readme.txt */,
 			);
 			sourceTree = "<group>";
 		};
